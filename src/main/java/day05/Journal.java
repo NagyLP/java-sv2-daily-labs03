@@ -8,7 +8,7 @@ public class Journal {
     private List<String> studentName = new ArrayList<>();
 
     public boolean addStudent (String studentName) {
-        if (studentName.indexOf(' ')>0) { this.studentName.add(studentName);
+        if (studentName.trim().indexOf(' ')>0) { this.studentName.add(studentName);
             return true;
     } else {
             return false;
